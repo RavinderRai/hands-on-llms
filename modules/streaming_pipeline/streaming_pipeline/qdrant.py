@@ -5,7 +5,7 @@ from bytewax.outputs import DynamicOutput, StatelessSink
 from qdrant_client import QdrantClient
 from qdrant_client.http.api_client import UnexpectedResponse
 from qdrant_client.http.models import Distance, VectorParams
-
+from qdrant_client.models import PointStruct
 
 from streaming_pipeline import constants
 from streaming_pipeline.models import Document
