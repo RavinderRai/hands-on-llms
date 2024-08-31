@@ -33,7 +33,8 @@ export_requirements:
 upload_dataset_to_beam:
 	@echo "Pushing data to the qa_dataset volume on Beam..."
 	
-	beam volume upload qa_dataset dataset
+	#beam volume upload qa_dataset dataset #I this this is the version 1 command which no longer works.
+	beam cp dataset qa_dataset/
 
 
 # === Training ===
